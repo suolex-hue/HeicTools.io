@@ -1,5 +1,5 @@
 # HeicTools.io
-A simple guide and free tool to convert HEIC images to JPG/PDF/PNG easily.
+
 # 🖼️ HEIC Tools - The Ultimate Client-Side HEIC Converter
 
 Welcome to the official documentation and issue tracker repository for **[HeicTools](https://heictools.io)**. 
