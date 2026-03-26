@@ -52,8 +52,6 @@ Since the tool is entirely web-based, it works flawlessly on:
 
 ## 🛠️ How It Works (For the Tech-Savvy)
 
-While the source code is proprietary and not hosted in this repository, the architecture is built using modern web technologies. 
-
 By leveraging JavaScript libraries and `Web Workers`, the browser reads the raw binary data of the `.heic` file, decodes it locally using your device's RAM and CPU, and re-encodes it directly, allowing you to easily convert [heic to jpg](https://heictools.io), [heic to png](https://heictools.io/heic-to-png), or [heic to pdf](https://heictools.io/heic-to-pdf). This approach not only guarantees privacy but also significantly reduces bandwidth usage since you aren't uploading megabytes of image data.
 
 ---
