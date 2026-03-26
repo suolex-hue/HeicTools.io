@@ -83,7 +83,7 @@ for (let i = 1; i < decoded.length; i++) {
 }
 
 // 'primaryImage' is now ready to be rendered onto the canvas
-
+```
 ---
 
 ## 🐛 Bug Reports & Feature Requests
