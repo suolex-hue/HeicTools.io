@@ -16,9 +16,9 @@ If you've ever transferred photos from an iPhone to a Windows PC or an Android d
 
 Our web application provides a seamless experience for converting your HEIC images into the world's most widely accepted formats. We currently support:
 
-1. **HEIC to JPG:** Convert your iPhone photos to the standard JPEG format, making them universally viewable on any device, social media platform, or operating system.
-2. **HEIC to PNG:** Need to preserve high quality or work with graphics? Convert your HEIC files to PNG with lossless quality.
-3. **HEIC to PDF:** Easily compile one or multiple HEIC images into a single PDF document. Perfect for sharing documents, portfolios, or printing.
+1. **[HEIC to JPG](https://heictools.io):** Convert your iPhone photos to the standard JPEG format, making them universally viewable on any device, social media platform, or operating system.
+2. **[HEIC to PNG](https://heictools.io/heic-to-png):** Need to preserve high quality or work with graphics? Convert your HEIC files to PNG with lossless quality.
+3. **[HEIC to PDF](https://heictools.io/heic-to-pdf):** Easily compile one or multiple HEIC images into a single PDF document. Perfect for sharing documents, portfolios, or printing.
 
 ---
 
@@ -52,7 +52,37 @@ Since the tool is entirely web-based, it works flawlessly on:
 
 ## 🛠️ How It Works (For the Tech-Savvy)
 
-By leveraging the open-source [libheif-bundle.js](https://cdn.jsdelivr.net/npm/libheif-js@1.17.1/) library alongside `Web Workers`, the browser reads the raw binary data of the `.heic` file, decodes it locally using your device's RAM and CPU, and re-encodes it directly. This allows you to easily convert [heic to jpg](https://heictools.io), [heic to png](https://heictools.io/heic-to-png), or [heic to pdf](https://heictools.io/heic-to-pdf). This approach not only guarantees privacy but also significantly reduces bandwidth usage since you aren't uploading megabytes of image data.
+
+By leveraging the open-source [libheif-bundle.js](https://cdn.jsdelivr.net/npm/libheif-js@1.17.1/) library alongside `Web Workers`, the browser reads the raw binary data of the `.heic` file, decodes it locally using your device's RAM and CPU, and re-encodes it directly. This allows you to easily convert HEIC files to standard formats like JPG, PNG, or PDF entirely client-side. This approach not only guarantees privacy (as no files are sent to any server) but also significantly reduces bandwidth usage since you aren't uploading megabytes of image data.
+
+### The Conversion Workflow
+
+1. **Local File Reading:** The selected `.heic` file is read locally as an `ArrayBuffer`.
+2. **Background Processing:** The data is passed to a `Web Worker` to ensure the main UI thread remains responsive during the heavy decoding process.
+3. **WASM Decoding:** The `libheif-js` WebAssembly module decodes the binary data into raw image frames.
+4. **Primary Image Extraction:** Since HEIC files can contain multiple frames (such as thumbnails or burst photos), we dynamically extract the highest-resolution frame.
+5. **Rendering & Exporting:** The extracted image is drawn onto an HTML `<canvas>` and exported as a Base64/Blob in the desired format.
+
+### Extracting the Highest-Resolution Frame
+
+To ensure the best quality, the following logic is used to iterate through all decoded frames and extract the primary image based on its dimensions:
+
+```javascript
+// 'decoded' represents the array of image frames returned by the decoder
+let primaryImage = decoded[0];
+let maxArea = primaryImage.get_width() * primaryImage.get_height();
+
+// Iterate through all frames to find the one with the highest resolution
+for (let i = 1; i < decoded.length; i++) {
+    let area = decoded[i].get_width() * decoded[i].get_height();
+    
+    if (area > maxArea) { 
+        primaryImage = decoded[i]; 
+        maxArea = area; 
+    }
+}
+
+// 'primaryImage' is now ready to be rendered onto the canvas
 
 ---
 
