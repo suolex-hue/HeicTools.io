@@ -1,12 +1,12 @@
 # HeicTools.io
 
-# 🖼️ HEIC Tools - The Ultimate Client-Side HEIC Converter
+# 🖼️ HEICTools - The Ultimate Client-Side HEIC Converter
 
 Welcome to the official documentation and issue tracker repository for **[HeicTools](https://heictools.io)**. 
 
 If you've ever transferred photos from an iPhone to a Windows PC or an Android device, you've likely encountered `.heic` files. While Apple's High-Efficiency Image Container (HEIC) is fantastic for saving storage space, it suffers from severe compatibility issues across non-Apple ecosystems. 
 
-**HEIC Tools** was built to solve this problem efficiently, securely, and completely for free.
+**HEICTools** was built to solve this problem efficiently, securely, and completely for free.
 
 
 ---
