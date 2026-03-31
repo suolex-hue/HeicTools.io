@@ -8,7 +8,6 @@ If you've ever transferred photos from an iPhone to a Windows PC or an Android d
 
 **HEIC Tools** was built to solve this problem efficiently, securely, and completely for free.
 
-🌐 **Access the free tool here:** [https://heictools.io](https://heictools.io)
 
 ---
 
