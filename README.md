@@ -2,7 +2,7 @@
 
 # 🖼️ HEIC Tools - The Ultimate Client-Side HEIC Converter
 
-Welcome to the official documentation and issue tracker repository for **[HeicTools](https://heictools.io)**. 
+Welcome to the official documentation and issue tracker repository for HeicTools. 
 
 If you've ever transferred photos from an iPhone to a Windows PC or an Android device, you've likely encountered `.heic` files. While Apple's High-Efficiency Image Container (HEIC) is fantastic for saving storage space, it suffers from severe compatibility issues across non-Apple ecosystems. 
 
@@ -15,7 +15,7 @@ If you've ever transferred photos from an iPhone to a Windows PC or an Android d
 
 Our web application provides a seamless experience for converting your HEIC images into the world's most widely accepted formats. We currently support:
 
-1. **[HEIC to JPEG](https://heictools.io):** Convert your iPhone photos to the standard JPEG format, making them universally viewable on any device, social media platform, or operating system.
+1. **[HEIC to JPEG](https://heictools.io/):** Convert your iPhone photos to the standard JPEG format, making them universally viewable on any device, social media platform, or operating system.
 2. **[HEIC to PNG](https://heictools.io/heic-to-png):** Need to preserve high quality or work with graphics? Convert your HEIC files to PNG with lossless quality.
 3. **[HEIC to PDF](https://heictools.io/heic-to-pdf):** Easily compile one or multiple HEIC images into a single PDF document. Perfect for sharing documents, portfolios, or printing.
 
@@ -99,4 +99,4 @@ We use this GitHub repository to track issues and listen to our users.
 ## 🌍 About Us
 Our mission is to build lightweight, fast, and privacy-respecting utility tools for everyday internet users. Say goodbye to format incompatibility and convert your files with just one click.
 
-🔗 **Try it now:** **[heictools.io](https://heictools.io)**
+🔗 **Learn more about:** **[HeicTools](https://sites.google.com/view/heictools-io/home)**
