@@ -15,7 +15,7 @@ If you've ever transferred photos from an iPhone to a Windows PC or an Android d
 
 Our web application provides a seamless experience for converting your HEIC images into the world's most widely accepted formats. We currently support:
 
-1. **[HEIC to JPEG](https://heictools.io/):** Convert your iPhone photos to the standard JPEG format, making them universally viewable on any device, social media platform, or operating system.
+1. **[HEIC to JPG](https://heictools.io/):** Convert your iPhone photos to the standard JPEG format, making them universally viewable on any device, social media platform, or operating system.
 2. **[HEIC to PNG](https://heictools.io/heic-to-png):** Need to preserve high quality or work with graphics? Convert your HEIC files to PNG with lossless quality.
 3. **[HEIC to PDF](https://heictools.io/heic-to-pdf):** Easily compile one or multiple HEIC images into a single PDF document. Perfect for sharing documents, portfolios, or printing.
 
