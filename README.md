@@ -99,4 +99,4 @@ We use this GitHub repository to track issues and listen to our users.
 ## 🌍 About Us
 Our mission is to build lightweight, fast, and privacy-respecting utility tools for everyday internet users. Say goodbye to format incompatibility and convert your files with just one click.
 
-🔗 **Learn more about:** **[HeicTools](https://sites.google.com/view/heictools-io/home)**
+🔗 **Learn more about HeicTools:** **[google sites](https://sites.google.com/view/heictools-io/home)**
